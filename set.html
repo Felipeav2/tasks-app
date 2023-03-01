@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Planner</title>
+</head>
+<body>
+    <h1>Set goals</h1>
+        <div>
+            <form method="POST">
+            <h1>Major task:</h1>
+            <label for="majorTask"></label>
+            <input type="text" name="majorTask" id="majorTask" required>
+            <br>
+            </form>
+        </div>
+        <div>
+            <h1>Three shorter tasks</h1>
+            <form method="post">
+                <label for="shortTask">Second shorter task:</label>
+                <input type="text" name="shortTask[]" id="name" required>
+                <br>
+            </form>
+            <form method="post">
+                <label for="shortTask">Second shorter task:</label>
+                <input type="text" name="shortTask[]" id="name" required>
+                <br>
+            </form>
+            <form method="post">
+                <label for="shortTask">Third shorter task:</label>
+                <input type="text" name="shortTask[]" id="name" required>
+                <br>
+            </form>
+        </div>
+
+        <div>
+                <h1>Three maintenence activities</h1>
+                <form method="post">
+                    <label for="maintenence">Second shorter task:</label>
+                    <input type="text" name="maintenence[]" id="name" required>
+                    <br>
+                </form>
+                <form method="post">
+                    <label for="maintenence">Second shorter task:</label>
+                    <input type="text" name="maintenence[]" id="name" required>
+                    <br>
+                </form>
+                <form method="post">
+                    <label for="maintenence">Third shorter task:</label>
+                    <input type="text" name="maintenence[]" id="name" required>
+                    <br>
+                </form>
+         </div>
+    
+</body>
+</html>
