@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,25 +7,18 @@
 <body>
     <h1>Welcome to my app!</h1>
     <div>
-        <a href="set.html">Set goals for the day</a>
+        <a href="tasks">Set goals for the day</a>
     </div>
     <div>
         <h1>Tasks for the day</h1>
         <div>
-            <h1>Major task/project</h1>
-                <p>{{ majorTask[0] }}</p>
+            <h2>Major task/project</h2>
         </div>
         <div>
             <h1>Shorter tasks</h1>
-                {% for i in range(shortTasks|length) %}
-                <p>-{{ shortTasks[i] }}</p>
-                {% endfor %}
         </div>
         <div>
             <h1>Maintenence tasks</h1>
-                {% for i in range(maintenence|length) %}
-                <p>-{{ maintenence[i] }}</p>
-                {% endfor %}
         </div>
     </div>
 </body>
