@@ -13,9 +13,13 @@
         <h1>Tasks for the day</h1>
         <div>
             <h2>Major task/project</h2>
+            <p>{{ tasks["majorTask"] }}</p>
         </div>
         <div>
             <h1>Shorter tasks</h1>
+            {% for task in tasks["shortTasks"] %}
+            <li>{{ task }}</li>
+            {% endfor %}
         </div>
         <div>
             <h1>Maintenence tasks</h1>

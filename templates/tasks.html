@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Planner</title>
+    </head>
+    <body>
+        <h1>Set tasks</h1>
+        <form method="POST" action="/tasks">
+            <label for="taskType">Type of task:</label>
+            <select id="taskType" name="taskType">
+                <option value="majorTask">Major Task</option>
+                <option value="shortTask">Minor Task</option>
+                <option value="maintenanceTask">Maintenance Task</option>
+            </select>
+            <br><br>
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task">
+            <br><br>
+            <input type="submit" value="Add Task">
+        </form>
+        <br>
+        <form method="GET" action="/">
+            <input type="submit" value="Reutrn to main page">
+        </form>
+    </body>
+</html>
